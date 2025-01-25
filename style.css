@@ -1,0 +1,29 @@
+/* Typewriter effect */
+.typewriter {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid rgba(255, 255, 255, 0.75); /* Cursor effect */
+    width: 0;
+    animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end 4s forwards;
+    /* The blink animation will now stop after the typing is complete */
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+    100% {
+      border-color: transparent; /* Ensure the cursor disappears at the end */
+    }
+  }
+  

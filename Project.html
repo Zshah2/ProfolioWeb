@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/About/About.js" defer></script> <!-- Link to external JS file -->
+</head>
+
+<body class="bg-gray-900 text-white font-sans leading-normal tracking-normal min-h-screen flex flex-col">
+
+  <!-- Navbar -->
+  <header class="bg-transparent text-white relative">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+
+      <!-- Logo/Brand Name -->
+      <a href="/" class="text-3xl font-semibold text-white">My Portfolio</a>
+
+      <!-- Hamburger Icon (Visible on small screens) -->
+      <button id="hamburger" class="text-3xl focus:outline-none">
+        <span id="bar1" class="block w-8 h-1 bg-white mb-2"></span>
+        <span id="bar2" class="block w-8 h-1 bg-white mb-2"></span>
+        <span id="bar3" class="block w-8 h-1 bg-white"></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <div id="cardMenu" class="hidden absolute top-20 right-0 w-64 bg-white bg-opacity-30 backdrop-blur-xl rounded-lg shadow-lg transform transition-all duration-500 ease-in-out">
+        <ul id="navLinks" class="space-y-4 p-4">
+          <li><a href="/index.html" class="block text-center py-4 px-6 text-white hover:bg-gray-700 hover:text-gray-300 rounded-lg">Home</a></li>
+          <li><a href="/About.html" class="block text-center py-4 px-6 text-white hover:bg-gray-700 hover:text-gray-300 rounded-lg">About</a></li>
+          <li><a href="/Project.html" class="block text-center py-4 px-6 text-white hover:bg-gray-700 hover:text-gray-300 rounded-lg">Projects</a></li>
+          <li><a href="#contact" class="block text-center py-4 px-6 text-white hover:bg-gray-700 hover:text-gray-300 rounded-lg">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Projects Section -->
+  <section class="py-20 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-semibold text-white mb-12 text-center">My Projects</h2>
+      
+      <!-- List of Projects -->
+      <ul class="space-y-8">
+
+        <!-- Project Card 1 -->
+        <li class="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300">
+          <div class="flex items-center space-x-6">
+            <img src="project1-image.jpg" alt="Project 1" class="w-24 h-24 object-cover rounded-md">
+            <div>
+              <h3 class="text-2xl font-semibold text-white mb-2">Project 1 Title</h3>
+              <p class="text-lg text-gray-300 mb-4">
+                Ticket System with Login
+                A simple, responsive ticketing system built with HTML 
+                and Tailwind CSS, featuring a login page for secure access.
+                Users can log in, submit, and manage tickets through a clean, 
+                 user-friendly interface.
+              </p>
+              <a href="https://github.com/username/project1" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-full">
+                View Project
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Project Card 2 -->
+        <li class="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300">
+          <div class="flex items-center space-x-6">
+            <img src="project2-image.jpg" alt="Project 2" class="w-24 h-24 object-cover rounded-md">
+            <div>
+              <h3 class="text-2xl font-semibold text-white mb-2">Project 2 Title</h3>
+              <p class="text-lg text-gray-300 mb-4">
+                A brief description of the project goes here. Describe the technologies used, the purpose of the project, and any challenges you overcame.
+              </p>
+              <a href="https://github.com/username/project2" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-full">
+                View Project
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Project Card 3 -->
+        <li class="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300">
+          <div class="flex items-center space-x-6">
+            <img src="project3-image.jpg" alt="Project 3" class="w-24 h-24 object-cover rounded-md">
+            <div>
+              <h3 class="text-2xl font-semibold text-white mb-2">Project 3 Title</h3>
+              <p class="text-lg text-gray-300 mb-4">
+                A brief description of the project goes here. Describe the technologies used, the purpose of the project, and any challenges you overcame.
+              </p>
+              <a href="https://github.com/username/project3" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-full">
+                View Project
+              </a>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 text-center mt-auto">
+    <p>&copy; 2025 Mohammad Shah. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
